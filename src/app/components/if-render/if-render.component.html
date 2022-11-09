@@ -1,0 +1,9 @@
+<div class="class">
+    <div *ngIf="canShow">Exemplo de exibição de texto com variável booleana</div>
+    <h2 *ngIf="name === 'Ivan'; else noNome">Nome do DEV: Ivan!</h2>
+    <ng-template #noNome>
+        <div>
+            <h2>Nome do DEV não encontrado...</h2>
+        </div>
+    </ng-template>
+</div>
